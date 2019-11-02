@@ -23,12 +23,12 @@ public class ObserverPatternController {
 		System.out.println("\n\nAdding a new value to the end of the list -- (All views must show this change)");		
 		mydata.addData(1000.0);	
 		System.out.println("\n\nNow removing two observers from the list:");		
-		mydata.remove(ht);
-		mydata.remove(vt);	
+		mydata.removeObserver(ht);
+		mydata.removeObserver(vt);	
 		System.out.println("Only the remained observer (One Row ), is notified.");
 		mydata.addData(2000.0);
 		System.out.println("\n\nNow removing the last observer from the list:");	
-		mydata.remove(hl);
+		mydata.removeObserver(hl);
 		System.out.println("\nAdding a new value the end of the list:");	
 		mydata.addData(3000.0);
 		System.out.println("Since there is no observer -- nothing is displayed ...");

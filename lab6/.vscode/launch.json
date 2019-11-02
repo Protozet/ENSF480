@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ObserverPatternController",
+            "request": "launch",
+            "mainClass": "exA.ObserverPatternController",
+            "projectName": "lab6_7f772c56"
+        }
+    ]
+}

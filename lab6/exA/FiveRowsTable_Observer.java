@@ -10,7 +10,6 @@ public class FiveRowsTable_Observer implements Observer {
     public FiveRowsTable_Observer(Subject s) {
         subject = s;
         subject.registerObserver(this);
-        display();
     }
 
     @Override
@@ -20,7 +19,7 @@ public class FiveRowsTable_Observer implements Observer {
     }
 
     public void display(){
-
+        System.out.println("Notification to Five-Rows Table Observer: Data Changed:");
     }
 
 }

@@ -10,7 +10,6 @@ public class OneRow_Observer implements Observer {
     public OneRow_Observer(Subject s) {
         subject = s;
         subject.registerObserver(this);
-        display();
     }
 
     @Override
@@ -20,7 +19,11 @@ public class OneRow_Observer implements Observer {
     }
 
     void display(){
-
+        System.out.println("Notification to One-Row Table Observer: Data Changed:");
+        for (Double double1 : data) {
+            System.out.print(double1 + " ");
+        }
+        System.out.println();
     }
 
 }

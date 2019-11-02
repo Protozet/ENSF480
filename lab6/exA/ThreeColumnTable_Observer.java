@@ -10,7 +10,6 @@ public class ThreeColumnTable_Observer implements Observer {
     public ThreeColumnTable_Observer(Subject s) {
         subject = s;
         subject.registerObserver(this);
-        display();
     }
 
     @Override
@@ -20,7 +19,7 @@ public class ThreeColumnTable_Observer implements Observer {
     }
 
     public void display(){
-
+        System.out.println("Notification to Three-Column Table Observer: Data Changed:");
     }
 
 }
