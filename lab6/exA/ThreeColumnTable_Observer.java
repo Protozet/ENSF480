@@ -19,7 +19,15 @@ public class ThreeColumnTable_Observer implements Observer {
     }
 
     public void display(){
-        System.out.println("Notification to Three-Column Table Observer: Data Changed:");
+        System.out.print("\nNotification to Three-Column Table Observer: Data Changed:");
+        int i = 0;
+        for (Double double1 : data) {
+            if(i % 3 == 0)
+                System.out.println();
+            System.out.print(double1 + " ");
+            i++;
+        }
+        System.out.println();
     }
 
 }
