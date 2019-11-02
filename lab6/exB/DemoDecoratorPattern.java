@@ -1,3 +1,5 @@
+package exB;
+
 import java.awt.Font;
 import java.awt.Graphics;
 import javax.swing.JFrame;
