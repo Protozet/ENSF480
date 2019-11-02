@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "atomic": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp",
+        "fstream": "cpp",
+        "optional": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "iosfwd": "cpp"
+    }
+}
