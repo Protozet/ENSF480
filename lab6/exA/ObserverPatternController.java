@@ -1,3 +1,5 @@
+package exA;
+
 /* ENSF 480 - Lab 2
  * M. Moussavi
  */
