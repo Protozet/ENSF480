@@ -20,7 +20,7 @@ class LoginServer{
         LoginServer& operator= (const LoginServer& rhs);
 
     public: 
-        static LoginServer* getInstance();
+        static LoginServer *getInstance();
         void add(string username, string password);
         User validate(string username, string password);
 };
