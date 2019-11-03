@@ -10,7 +10,6 @@ struct User {
         string password;
 };
 
-
 class LoginServer{
     private: 
         static LoginServer* instance;

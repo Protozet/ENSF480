@@ -2,13 +2,14 @@
 #include "LoginServer.h"
 using namespace std;
 
+
 LoginServer::LoginServer(){
- //   users = new std::vector<User>&;
+    users = vector<User>();
 }
 
 LoginServer::LoginServer(const LoginServer& src){
     users = src.users;
-    instance = src.instance;
+    this->instance = src.instance;
 }
 
 LoginServer* LoginServer::getInstance(){
@@ -20,10 +21,9 @@ LoginServer* LoginServer::getInstance(){
 LoginServer& LoginServer::operator=(const LoginServer& rhs){
     if(this == &rhs)
         return *this;
-    //delete users;
     users = rhs.users;
     instance = rhs.instance;
-    return this;
+    return *this;
 }
 
 
