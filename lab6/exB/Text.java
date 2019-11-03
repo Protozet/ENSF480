@@ -16,7 +16,7 @@ public class Text implements Component {
 
     @Override
     public void draw(Graphics g) {
-        
+        g.drawString(text, x, y);
     }
     
 }

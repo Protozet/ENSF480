@@ -1,6 +1,9 @@
 package exB;
 
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.BasicStroke;
+import java.awt.Color;
 
 public class ColourFrameDecorator extends Decorator{
     
@@ -17,6 +20,12 @@ public class ColourFrameDecorator extends Decorator{
 
     @Override
     public void draw(Graphics g) {
-        
+        Graphics2D g2d = (Graphics2D)g;
+        g2d.getStroke();
+        g2d.getColor();
+        g2d.setStroke(new BasicStroke(thickness));
+        g2d.setColor(Color.red);
+        g2d.drawRect(x, y, width, height);
+        // g2d.sets
     }
 }
