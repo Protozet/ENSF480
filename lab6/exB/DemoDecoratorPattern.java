@@ -23,11 +23,12 @@ public class DemoDecoratorPattern extends JPanel {
 		// Now lets decorate t with BorderDecorator: x = 30, y = 30, width = 100, and
 		// height 100
 		t = new BorderDecorator(t, 30, 30, 100, 100);
-
+		
 		// Now lets add a ColouredFrameDecorator with x = 25, y = 25, width = 110,
 		// height = 110,
 		// and thickness = 10.
 		t = new ColourFrameDecorator(t, 25, 25, 110, 110, 10);
+		
 
 		// Now lets draw the product on the screen
 		t.draw(g);
@@ -36,7 +37,6 @@ public class DemoDecoratorPattern extends JPanel {
 	public static void main(String[] args) {
 		// Graphics g;
 		DemoDecoratorPattern panel = new DemoDecoratorPattern();
-		panel.add(new JLabel("Welcom !!!"));
 		// panel.setBackground(new Color(10, 15, 200));
 		// panel.setVisible(true);
         JFrame frame = new JFrame("Learning Decorator Pattern");
