@@ -10,6 +10,7 @@ struct User {
     public: 
         string username;
         string password;
+        User(){};
 };
 
 class LoginServer{
@@ -17,7 +18,8 @@ class LoginServer{
         static LoginServer* instance;
         std::vector<User> users; 
 
-        LoginServer();
+        LoginServer(){};
+        
         LoginServer(const LoginServer& src){
             instance = src.getInstance();
         }
@@ -32,7 +34,20 @@ class LoginServer{
             }
             return instance;
         }
-        void add(string username, string password);
-        User validate(string username, string password);
+        void add(string name, string pass){
+            User n;
+            n.password = pass;
+            n.username = name;
+            users.push_back(n);
+        }
+        User* validate(string name, string pass){
+            for(int i = 0; i < users.size(); i++){
+                if(users.at(i).username == name && users.at(i).password == pass){
+                    return &users.at(i);
+                }
+            }
+            return nullptr;
+        }
 };
+LoginServer* LoginServer:: instance = nullptr;
 #endif
