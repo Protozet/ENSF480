@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DemoDecoratorPattern",
+            "request": "launch",
+            "mainClass": "exB.DemoDecoratorPattern",
+            "projectName": "lab6_7f772c56"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ObserverPatternController",
             "request": "launch",
             "mainClass": "exA.ObserverPatternController",
