@@ -7,7 +7,7 @@ class Client_B{
     private:
         LoginServer *instance;
     public:
-        Client_B();
+        Client_B(){}
         void add(string username, string password);
         User* validate(string username, string password);
         Client_B& operator =(const Client_B& rhs){

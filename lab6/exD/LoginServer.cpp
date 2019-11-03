@@ -11,21 +11,21 @@ LoginServer::LoginServer(){
 // }
 
 // LoginServer* LoginServer::getInstance(){
-//     if(instance == nullptr){
+//     if(instance == NULL){
 //         instance = new LoginServer();
 //     }
 //     return instance;
 // }
 
-LoginServer& LoginServer::operator=(const LoginServer& rhs){
-    if(this == &rhs)
-        return *this;
+// LoginServer LoginServer::operator=(const LoginServer& rhs){
+//     if(this == &rhs)
+//         return *this;
     
-    users = rhs.users;
-    instance = rhs.instance;
-    return *this;
-}
+//     // users = rhs.users;
+//     instance = getInstance();
+//     return *this;
+// }
 
-int main(){
-    cout << "heyo" << endl;
-}
+// int main(){
+//     cout << "heyo" << endl;
+// }
