@@ -7,7 +7,9 @@ class Client_B{
     private:
         LoginServer *instance;
     public:
-        Client_B(){}
+        Client_B(){
+            instance = LoginServer::getInstance();
+        }
         void add(string username, string password){
             instance->add(username, password);
         }
