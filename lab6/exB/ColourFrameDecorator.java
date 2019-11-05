@@ -22,13 +22,9 @@ public class ColourFrameDecorator extends Decorator{
     @Override
     public void draw(Graphics g) {
         Graphics2D g2d = (Graphics2D)g;
-        // Stroke oldStroke = g2d.getStroke();
-        // Color oldColor = g2d.getColor();
+        cmp.draw(g);
         g2d.setStroke(new BasicStroke(thickness));
         g2d.setColor(Color.red);
         g2d.drawRect(x, y, width, height);
-        cmp.draw(g);
-        // g2d.setStroke(oldStroke);
-        // g2d.setColor(oldColor);
     }
 }
