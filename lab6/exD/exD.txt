@@ -1,0 +1,3 @@
+After changing the if 0 to if 1 in our code we found multiple errors. Our program does not allow the creation of new LoginServer objects. 
+This is because it violates the singleton design pattern specifics that there can only be one instance of the singleton object. 
+An object of LoginServer is unable to find user Tim as functions of LoginServer are private, and inaccessable. 

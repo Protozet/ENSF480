@@ -4,6 +4,7 @@
 //
 #include "Client_A.h"
 #include "Client_B.h"
+#include "LoginServer.h"
 #include <iostream>
 using namespace std;
 
